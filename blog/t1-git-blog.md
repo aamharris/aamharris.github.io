@@ -1,13 +1,15 @@
-Title
+## The World of Git
 
-Subtitle
+### Version control, Git, and GitHub
 
-Date
+31 October 2014
 
-Paragraph 1
+We've all been a part of group projects at some point in our lives. If you haven't, I would like to know how you have avoided it your whole life. Whether you are working, at school, or planning an event or party, you are always collaborating with others so that you can get your assigned task done in the right way. When there are only two people involved with the task, it isn't too bad. Your communication is focused at one other person, and you probably won't get things mixed up if you work well together. But say you have a group project. You are assigned to cook a soup. There is a pot in a kitchen, but since everyone can't meet at the same time, you assign people to bring ingredients throughout the day to put in the pot. At first it works out well- a few people bring in the right ingredients and this soup is as perfect as it can be. But someone gets mixed up and adds an ingredient that wasn't on the list. Then they add the same ingredient someone else made. When you tasted it at noon, it was delicious, but at the end of the day your dog wouldn't even eat it. Who messed up? What ingredients were added? Can we go back in time?!
 
-Paragraph 2
+*Enter Version Control*
 
-Paragraph 3
+The above scenario is a little crazy, but hopefully it illustrates the importance of version control. What version control would allow you to do is see who added the ingredients and when they did it. If there were conflicts with ingredients, version control would let you know and let you decide which one you would want. Best part, you could go back to a previous version if something tasted bad and try again.
 
-Add as many paragraphs as you want!!!
+*Git to know Git*
+
+Git is version control software that allows you to do just that. In computer programming, it allows you to see who added code, what they added, and if something went wrong with the code, git allows you to go back and make changes to when it so you can have a working version again. Sounds awesome, doesn't it? But it doesn't do much if people can't collaborate from their own locations. Well, *GitHub* allows git to be pushed and pulled online. Much like dropbox that allows you to put a file from your computer on the internet and access it from anywhere, GitHub allows groups to add their code from different locations while allowing version control. That is some pretty solid stuff.
