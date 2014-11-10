@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<link style="text/css", rel="stylesheet", href="blogstyle.css"/>
+<head>
+<title>Aaron Harris | Blog</title>
+</head>
+<body>
+<div id="container">
+    <div id="logo"><img src="https://raw.githubusercontent.com/aamharris/phase-0-unit-1/master/week-2/imgs/signature.jpg?token=AIm9Eu4_oyNm3yQgc0hr5HOCMQf8UMTbks5UaBV8wA%3D%3D"></div>
+    <div id="navbar">
+      <ul>
+        <li><a href="#">blog.</a></li>
+        <li><a href="#">portfolio.</a></li>
+        <li><a href="#">contact.</a></li>
+        <li><a href="#">who's aaron?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="content_area">
+    <div id="banner"></div>
+  </div>
+  <!--INSERT TITLE-->
+  <p id="blog_title">What's your Favorite Posish?</p>
+  <p id="date">Relative, Absolute, and Fixed Positionings</p>
+
+  <!--INSERT DATE-->
+  <p id="date">9 November 2014</p>
+
+  <!--INSERT BLOG POST-->
+    <div id="blog_post">Positions in CSS are kind of a tricky thing to learn, but once you learn how to move things around your design, you will never be the same. Positions give you control over your divs and other elements, so it is crucial that you know how to do it correctly. <br>
+      <br>
+      <b>Fixed Positioning</b><br>
+      We can start out with one of the easier ones: fixed positioning. Can you guess what that does? Yep, it's fixed...doesn't move. This is relative to your browser window. What that means is that even if you have to scroll down the page, that element stays put right where it is. An example that I used this for was my footer at the bottom of this page. I wanted it to be on the page all of the time (so you all would continually be tempted to visit my social media site), so I gave it a fixed position and there it is...all the time.<br>
+      <br>
+      <b>Relative Positioning</b><br>
+      <br>
+      Relative positioning involves moving the object by using the point where it normally sits as a reference point. Normal, or static positioning takes place when you put an element on the page and don't specify where it goes. It just goes after the element you placed before it. For example, if you add a div with text and then put a div with a colorful box, the colorful box would go right below the text. When you use relative positioning and specify left: 20px, it adds 20px to the left and will move the object to the right from its original position. You can also use negative values. <br><br>
+      <b>Absolute Positioning</b><br>
+      Absolute positioning is a bit tricky. A good rule of thumb for using absolute positioning is to make sure that the parent element you are nested in is using positioning other than static. When you use absolute positioning, you are positioning an object in relation to the parent object. Take a look at this example. <br>
+      <img src="https://raw.githubusercontent.com/aamharris/phase-0-unit-1/master/week-2/imgs/absoluteex1.png?token=AIm9Eq0Yt1kdqOTbO8Pe7wNiS10AIFyGks5UaULYwA%3D%3D"><br>If you look at the code on the left, you see that textbox is a parent of textbox2 (it is nested inside textbox). The position of textbox is not static, so if I set textbox2 to be absolute, it will use the textbox as a reference. Look what happens when you add 50px to the top- it pushes 50px down from the textbox.<br><img src="https://raw.githubusercontent.com/aamharris/phase-0-unit-1/master/week-2/imgs/absoluteex2.png?token=AIm9ElV-2u6-OVmqSmgw4FRF6xl-v4rEks5UaULswA%3D%3D"><br>
+      When you start practicing postioning, start simple. Make a few simple boxes and practice laying them out where you want. When you start getting good, add some nested items and play around with that. Nothing beats practice! </div>
+
+  <div id="footer">
+      <a href="http://www.linkedin.com/pub/aaron-harris/14/406/755/"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png"></a>
+      <a href="https://twitter.com/amharris87"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/twitter-icon.png"</a>
+      <a href="https://github.com/aamharris"><img src="http://matteocrippa.it/img/github_white.png"></a>
+      <a href="https://plus.google.com/u/0/118078710699759637504/posts"><img src="http://healthyfastfood.biz/wp-content/uploads/2014/10/google-plus-icon-png.png"></a>
+  </div>
+</body>
+</html>
