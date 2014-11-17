@@ -42,7 +42,7 @@
     age = { "David" => 22, "Lindsay" => 22 }
     <br><br>
     This is an example of how you can create a hash. You can see that it looks a bit different than an array. In this example, the keys "David" and "Lindsay" are different, but the values, or the ages are the same. This is not a problem. If we were to have 2 keys that were the same, the first one would be overwritten by a second one. This information is then accessed by something like: <br><br>
-    puts age[Lindsay]
+    puts age[Lindsay] <br><br>
 
     <b>When to use an array:</b>
     <ul>
@@ -63,22 +63,3 @@
   </div>
 </body>
 </html>
-
-
-
-When you are writing code and you have information to collect, you have to have to put it somewhere. Arrays and Hashes both allow you to hold different objects such as strings or integers but depending on the situation, there are reasons why you would want to pick one or the other. Check out the difference between arrays and hashes to see what one is right for the situation you are working on.
-
-Arrays store objects that are referenced with an index number. You can put different object types in the same array and For example, we can make an array called dog = [ beagle, boston, pug ]. If I wanted to access the second element, I would type dog[1].
-
-Hashes allow your data to have a user defined key/value pair. Unlike arrays where you can only call up your data with an indexed number, assigning your values with a unique key makes things more flexible. The trick here when you make your keys are that they must be unique. The value can be the same, but the key must be different. Here's a hash to help set up that point:
-age = { "David" => 22, "Lindsay" => 22 }
-This is an example of how you can create a hash. You can see that it looks a bit different than an array. In this example, the keys "David" and "Lindsay" are different, but the values, or the ages are the same. This is not a problem. If we were to have 2 keys that were the same, the first one would be overwritten by a second one. This information is then accessed by something like:
-puts age[Lindsay]
-
-When to use an array:
-When you don't have a need for a unique key to retrieve data
-When you want something to be in order. Since it is a set index set, arrays need to be called in the order they are in the array.
-
-When to use a hash:
-You want to retrieve data by a unique key, such as name, address, state, etc.
-You aren't worried about order since everything has a unique key. It is for this reason that you can also add or remove data frequently and you don't have to worry about retrieval since everything has that unique key.
