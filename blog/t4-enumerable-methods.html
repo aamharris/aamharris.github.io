@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<link style="text/css", rel="stylesheet", href="blogstyle.css"/>
+<head>
+<title> Learning Cycle</title>
+</head>
+<body>
+<div id="container">
+    <div id="logo"><a href="http://aamharris.github.io"><img src="http://aamharris.github.io/images/signature.jpg"></a>
+    </div>
+    <div id="navbar">
+      <ul>
+        <li><a href="http://aamharris.github.io/blogindex.html">blog.</a></li>
+        <li><a href="#">portfolio.</a></li>
+        <li><a href="#">contact.</a></li>
+        <li><a href="#">who's aaron?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="content_area">
+
+  <!--INSERT TITLE-->
+  <p id="blog_title">Learning Cycle</p>
+
+  <!--INSERT DATE-->
+  <p id="date">23 November 2014</p>
+
+  <!--INSERT BLOG POST-->
+    <div id="blog_post"></div>This week as I have gone through more difficult ruby exercises, I learned some enumerables that have helped me solve my code. Enumerables allow searching and sorting in your methods, and they are easy on the eyes if you know what I mean. Maybe you don't. They are easy to read- that's pretty much the point I was trying to get at. This week I came across so many enumerables, but I am going to cover only one of them today.
+
+	<br><br>#Cycle<br><br>
+
+Cycles allow you to go through an array and cycle through it a specified amount of times. If you don't specify, it goes on forever. Let's take a closer look to see it in action
+
+<br><br>mult = [1, 2, 3, 4]<br>
+
+mult.cycle { |int| puts int * 2 }<br><br>
+
+This first piece of code won't do much good except for crashing your computer. In the first part of the code, cycle is called to the mult array. In the brackets, cycle goes through each integer, taking that integer times 2. The first part of the result would look something like this:
+
+<br><br>=> 2, 4, 6, 8<br><br>
+
+BUT it doesn't stop there. Cycle will go through it again...and again since we didn't tell it how many times to go through it. So you will be left with a screen full of 2,4,6,8. There is a better use for this, so lets look at how we can do that.
+
+<br><br>mult.cycle(2) { |int| puts int * 2 }<br><br>
+
+So there you have it. That is the basics of #cycle!
+</div>
+  <div id="footer">
+      <a href="http://www.linkedin.com/pub/aaron-harris/14/406/755/"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png"></a>
+      <a href="https://twitter.com/amharris87"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/twitter-icon.png"</a>
+      <a href="https://github.com/aamharris"><img src="http://matteocrippa.it/img/github_white.png"></a>
+      <a href="https://plus.google.com/u/0/118078710699759637504/posts"><img src="http://healthyfastfood.biz/wp-content/uploads/2014/10/google-plus-icon-png.png"></a>
+  </div>
+</body>
+</html>
+
