@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <link style="text/css", rel="stylesheet", href="blogstyle.css"/>
+<head>
+  <title>Aaron Harris | Blog</title>
+</head>
+<body>
+<div id="container">
+    <div id="logo"><a href="http://aamharris.github.io"><img src="http://aamharris.github.io/images/signature.jpg"></a></div>
+    <div id="navbar">
+      <ul>
+        <li><a href="http://aamharris.github.io/blogindex.html">blog.</a></li>
+        <li><a href="#">portfolio.</a></li>
+        <li><a href="#">contact.</a></li>
+        <li><a href="#">who's aaron?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="content_area">
+
+
+  <!--INSERT TITLE-->
+  <p id="blog_title">Stay Classy, Ruby</p>
+
+  <!--INSERT DATE-->
+  <p id="date"> 30 November 2014</p>
+
+  <!--INSERT BLOG POST-->
+    <div id="blog_post">
+      Ruby is an object oriented programming language, which means that everything is an object. Much like the world around us, we have objects everywhere- tables, trees, televisions and cars are all objects. Even you are an object. All objects in real life have attributes. Think about tables for example. Tables have different materials, lengths, and heights. These are all examples of attributes. 
+      Lets take a moment and bring this idea into ruby. Everything in ruby is an object. Strings, numbers and true/false values are just some examples of objects in ruby. In order to give these objects attributes, they need classes to define them. Creating a new class looks like this: 
+
+      ##IMAGE
+      
+      And that is it. This is the skeleton for a class object. If we ran it through IRB, it would do nothing because we haven't given it any atrributes. Let's create a few attributes in an initialize method.
+
+      #IMAGE
+
+
+      Wait up...what's up with that @ sign?? When we define a method inside of a class, we need a way to access it from other methods. Adding the "at" sign at the beginning of a method allows that method to be called throughout the class. These are called instance variables. <br>
+      So far we have created a class, and a couple of instance variables. Here is the class so far:
+
+      ##IMAGE
+
+      To use this class, we can create it by filling in the arguments that we defined in the intialize method. Here is an example of creating this class. 
+
+      ##IMAGE
+
+      And here is the result of the class in the console
+
+      ##Image
+
+      And that is the very basics of creating classes. When would you want to use classes in ruby? 
+
+      <p>
+
+    </div>
+</div>  
+</body>
+<div id="footer">
+      <a href="http://www.linkedin.com/pub/aaron-harris/14/406/755/"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png"></a>
+      <a href="https://twitter.com/amharris87"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/twitter-icon.png"</a>
+      <a href="https://github.com/aamharris"><img src="http://matteocrippa.it/img/github_white.png"></a>
+      <a href="https://plus.google.com/u/0/118078710699759637504/posts"><img src="http://healthyfastfood.biz/wp-content/uploads/2014/10/google-plus-icon-png.png"></a>
+  </div>
+</html>
