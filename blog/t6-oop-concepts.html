@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <link style="text/css", rel="stylesheet", href="blogstyle.css"/>
+<head>
+  <title>Aaron Harris | Blog</title>
+</head>
+<body>
+<div id="container">
+    <div id="logo"><a href="http://aamharris.github.io"><img src="http://aamharris.github.io/images/signature.jpg"></a></div>
+    <div id="navbar">
+      <ul>
+        <li><a href="http://aamharris.github.io/blogindex.html">blog.</a></li>
+        <li><a href="#">portfolio.</a></li>
+        <li><a href="#">contact.</a></li>
+        <li><a href="#">who's aaron?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="content_area">
+
+
+  <!--INSERT TITLE-->
+  <p id="blog_title">Blocs, Procs, and Lambdas, oh my!</p>
+
+  <!--INSERT DATE-->
+  <p id="date"> 7 December 2014</p>
+
+  <!--INSERT BLOG POST-->
+    <div id="blog_post">
+     
+    <p>In DBC, we haven't learned about Procs and Lambda's yet, so for the technical blog this week, I decided to dive a little deeper into learning about what these are. If you have worked with ruby even at an early stage, you have worked with blocks, but you might not know much about them. We'll cover that too.</p>
+
+    <h3>Procs and Lambdas</h3>
+
+    <p>Lambdas are Proc objects that can be stored in variables. Essentially, lambdas are functions without names and they can return a value just like functions. </p>
+
+    <p>For example:</p>
+
+    <p>l = lambda {"Hello, World"}<br>
+    puts l.call</p>
+
+    <p>This results in:<p> 
+
+    <p>"Hello World"</p>
+
+    <p>Procs are similar to lambdas, but they do have some differences. If you want to create a proc, you would enter something like this:</p>
+
+    <p>proc = Proc.new {"Hello, World"}<br>
+    puts proc.call</p>
+
+    <p>The output of this would be the same as the lambda. But what if we did something like this:</p>
+
+    <p>def my_test<br>
+      proc = Proc.new {return "Hello, World"}<br>
+      proc.call<br>
+      return "Good-Bye"<br>
+    end</p>
+
+    <p>When working in ruby, we are used to it returning the last return value. This is not the case with a proc. The output of this would actually return "Hello World". </p>
+
+    <p>So Procs return values differently then lambdas. Another difference between the two is that Procs will return 1 argument, even if there are 3 that were passed, whereas lambdas will raise and arugument error.</p>
+
+   <h3>Blocks</h3>
+
+   <p>Unlike basically everything in ruby, blocks are not objects. Blocks are part of a method call and if they were to be on their own, you would get an error. When you put something between curly braces (like you would in a do/end syntax) that would be your block. If you have worked with statements like these, then you have worked with blocks. One thing that is important to mention with blocks would be the yield statement. If you have a method and then make a block as a parameter, you can use yield inside of the block to call that! Confusing? Let's see an example.</p>
+
+   <p>def cheer<br>
+    puts "Hip hip"<br>
+    yield<br>
+    puts "Hip hip"<br>
+    yield<br>
+  end</p>
+
+  <p>cheer {puts "Hooray!"}</p>
+
+  <p>The Result:<br>
+  Hip hip<br>
+  Hooray!<br>
+  Hip hip<br>
+  Hooray!</p>
+
+  <p>You can see that yield will put whatever is inside of the block. You can add parameters to the yield statements too. </p>
+
+    </div>
+</div>  
+</body>
+<div id="footer">
+      <a href="http://www.linkedin.com/pub/aaron-harris/14/406/755/"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png"></a>
+      <a href="https://twitter.com/amharris87"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/twitter-icon.png"</a>
+      <a href="https://github.com/aamharris"><img src="http://matteocrippa.it/img/github_white.png"></a>
+      <a href="https://plus.google.com/u/0/118078710699759637504/posts"><img src="http://healthyfastfood.biz/wp-content/uploads/2014/10/google-plus-icon-png.png"></a>
+  </div>
+</html>
