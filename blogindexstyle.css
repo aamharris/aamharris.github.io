@@ -12,7 +12,7 @@ body { background: white; margin:0; }
 #profile img { height: 500px; position: relative; left: 500px; top: -373px; }
 #color-block { height: 800px; margin: 0 auto; background-color: #263248;  }
 #welcomeheader {color: white; font-size: 60px; padding: 60px; top: 30px;}
-#welcometext {width: 600px; padding-left: 60px; padding-right: 60px; color: white; font-size: 20px; position: relative; top: 20px; text-decoration: none;}
+#welcometext {width: 600px; padding-left: 60px; padding-right: 60px; padding-bottom: 60px; color: white; font-size: 20px; position: relative; top: 20px; text-decoration: none;}
 a {
   color: white; text-decoration: none;
 }
