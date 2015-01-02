@@ -10,7 +10,7 @@ body { background: white; margin:0; }
 #navbar ul li a {font-size:12px; padding: 0 0 0 20px; text-decoration: none; color: white;}
 #content_area {margin: 0 auto; position: relative; }
 #profile img { height: 500px; position: relative; left: 500px; top: -373px; }
-#color-block { height: 800px; margin: 0 auto; background-color: #263248;  }
+#color-block { height: 1000px; margin: 0 auto; background-color: #263248;  }
 #welcomeheader {color: white; font-size: 60px; padding: 60px; top: 30px;}
 #welcometext {width: 600px; padding-left: 60px; padding-right: 60px; padding-bottom: 60px; color: white; font-size: 20px; position: relative; top: 20px; text-decoration: none;}
 a {
