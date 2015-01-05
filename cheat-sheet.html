@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>JavaScript Objects Cheat Sheet</title>
+  </head>
+
+  <body>
+      <div class = "title">
+        <h2>The Really Awesome Cheat Sheet to JavaScript Objects</h2>
+        <h3>By John and Aaron</h3>
+    </div>
+
+        <div class = "container">
+        <h4>What's an Object?</h4>
+        <p>Simply put, an object is a variable that has values. These values are properties of the object. </p>
+        <img src = "https://aamharris.github.io/images/w8cheatsheet/object.png">
+        <p>This assigned the value "Mike" to person. If we wanted to add several values, or properties, we can do that in a couple of different ways.</p>
+        
+        <h4>Creating Objects in JavaScript using Literal Notation</h4>
+        <img src = "https://aamharris.github.io/images/w8cheatsheet/objectprops.png">
+        <p>Person now has several properties as key/value pairs. If we needed to call on one of those properties, we could simply return person.name or person.age to use those properties. If we wanted to add a property, you would just code person.newProperty = "Foo". 
+        <p>You can also format an object like this: </p>
+        <img src = "https://aamharris.github.io/images/w8cheatsheet/objectformat.png">
+        
+        <p>In the example above, we defined the properties by literally assigning the values. There is another way to create objects called the constructor method.</p>
+        
+        <h4>Creating Objects in JavaScript using Constructor Notation</h4>
+        <img src = "https://aamharris.github.io/images/w8cheatsheet/constructor.png">
+        <p>In this example, we created the same object as we did in the first example. By adding a function, we can create multiple people with the same properties without having repeat code. </p>
+       
+        <h4>Using the JavaScript for object orientation</h4>
+        <p> JavaScript objects, while themselves simple data structures, can also be used to model object orientation for the JavaScript language.</p>
+        <p>To demonstrate, here are some examples on how you might use the Object data type to model silverware in an OOP fashion.</p>
+        <p> Creating a "Silverware" object </p>
+          <img src="https://jnmandal.github.io/blog/img/js-obj-ex-1.png">
+        <p> Using the object </p>
+          <img src="https://jnmandal.github.io/blog/img/js-obj-ex-2.png">
+        <p> Adapting the object </p>
+          <img src="https://jnmandal.github.io/blog/img/js-obj-ex-3.png">
+        </div>
+    </body>
+</html>
+<style>
+    body {
+        background:#88c7c9;
+    }
+
+    .container {
+      font: normal 12px/1.5 "Lucida Grande", arial, sans-serif;
+      width: 93%;
+      margin: 0 auto;
+      padding-left: 7%;
+      position: relative;
+      color: #444;
+      line-height: 20px;
+      border: 1px solid #d2d2d2;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+      background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+      background-size: 100% 20px;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      top: 0;
+      left: 3%;
+      bottom: 0;
+      border: 1px solid;
+      border-color: transparent #efe4e4;
+    }
+    
+    img { width: 50%; }
+
+    h2,h3 { font-family: sans-serif; text-align: center;}
+
+    .title { background-color: #68838B; padding-top: 1em; padding-bottom: 1em; color: white;}
+</style>
